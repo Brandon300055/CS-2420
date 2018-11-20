@@ -1,0 +1,38 @@
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="false"><ol class="carousel-indicators"><div v-for="pic of picture"><li data-target="#myCarousel" data-slide-to="0"></li></div></ol><a class="right" href="#myCarousel" data-slide="next"><div class="carousel-inner"><div v-for="pic of picture"><div class="item"><img v-bind:src="'/images/' + pic" alt="" style="width:100%;"></div></div></div></a></div>
+
+\n\t\t<div v-if="showing" class="card"\n\t\t\tv-bind:class="{ animated: animating, current: current }"\n\t\t\tv-bind:style="{ transform: returnTransformString }">\n\t\t\t
+
+<div v-for="item of items">
+<div class="image"\n\t\t\t\tv-bind:style="{ backgroundImage: returnImageString }">
+  </div>
+<div class="image-icon"\n\t\t\t\t\tv-bind:class="icon.type"\n\t\t\t\t\tv-bind:style="{ opacity: icon.opacity }">
+  \n\t\t\t\t</div>
+
+
+  \n\t\t\t</div>\n\t\t\t<h1 class="name">{{ fullName }}</h1><h1 class="name">In {{ location }} </h1><h1 class="name"> Age: {{ age }}</h1></div>\n\t',
+    data: function data() {
+
+<carousel><slider v-for="photo in pictures"  :key="photo.id">test</slider></carousel>
+
+
+<carousel :perPage=1><transition-group class="carousel" tag="div"><div v-for="pic in pictures" class="slide" :key="pic"><h4> {{ pic }} </h4></div></transition-group>'</carousel>
+
+<carousel :perPage=1>' + buildSlideMarkup(4) + '</carousel>
+
+
+      <div id="demo" class="carousel slide" data-ride="carousel"><ul class="carousel-indicators"><li data-target="#demo" data-slide-to="0" class="active"></li></ul><a  href="#demo" data-slide="next">
+
+<carousel><div v-for="pic of UserPictures"><img v-bind:src="'/images/' + pic" alt="" style="width:100%;"></div></carousel>
+
+
+<img v-bind:src="'/images/' + pic" alt="" style="width:100%;">
+      <slide>Slide 2 Content</slide>
+
+
+
+      template: '\n\t\t<div v-if="showing" class="card"\n\t\t\tv-bind:class="{ animated: animating, current: current }"\n\t\t\tv-bind:style="{ transform: returnTransformString }">\n\t\t\t\n\t\t\t\t<div class="image-icon"\n\t\t\t\t\tv-bind:class="icon.type"\n\t\t\t\t\tv-bind:style="{ opacity: icon.opacity }">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<h1 class="name">{{ fullName }}</h1><h1 class="name">In {{ location }} </h1><h1 class="name"> Age: {{ age }}</h1></div>\n\t',
+
+
+
+      <!-- \n\t\t<div v-if="showing" class="card"\n\t\t\tv-bind:class="{ animated: animating, current: current }"\n\t\t\tv-bind:style="{ transform: returnTransformString }">\n\t\t\t<div v-for="pic of picture"><div class="item active"><img v-bind:src="\'/images/\' + pic" alt="" style="width:100%;"></div></div>\n\t\t\t\t<div class="image-icon"\n\t\t\t\t\tv-bind:class="icon.type"\n\t\t\t\t\tv-bind:style="{ opacity: icon.opacity }">\n\t\t\t\t</div>\n\t\t\t</div>\n\t\t\t<h1 class="name">{{ fullName }}</h1><h1 class="name">In {{ location }} </h1><h1 class="name"> Age: {{ age }} <div v-for="pic of picture">{{ pic }}</div></h1></div>\n\t',
+          -->
